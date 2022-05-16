@@ -9,8 +9,8 @@ http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup
 next run rosrun rosserial_arduino makeLibrary.py into lib folder
 then go into ros.h replace 
 
-"#if defined(ESP8266) or defined(ESP32) or defined(ROSSERIAL_ARDUINO_TCP)"
+  #if defined(ESP8266) or defined(ESP32) or defined(ROSSERIAL_ARDUINO_TCP)
 
 to
 
-"#if defined(ROSSERIAL_ARDUINO_TCP)"
+  #if defined(ROSSERIAL_ARDUINO_TCP)
