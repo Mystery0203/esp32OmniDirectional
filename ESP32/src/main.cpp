@@ -1,3 +1,30 @@
+/*
+MIT License
+
+Copyright (c) 2022 Mystery0203
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+directly contact:- rahulagnel@gmail.com
+for any changes if to be made
+*/
+
 #include <Arduino.h>
 #include <analogWrite.h>
 #include <chassy.h>
@@ -26,28 +53,7 @@ void chassyMove(void* PvParameters){
   while(1){
     nh.spinOnce();
     square.Move((int)v,(int)w);
-    // vTaskDelay(50/portTICK_RATE_MS);
-    // square.Stop();
-    // v = 0.0;
-    // w = 0.0;
-  // square.Move(100,0);
-  // delay(5000);
-  // square.Stop();
-  // delay(1000);
-  // square.Move(-100,0);
-  // delay(5000);
-  // square.Stop();
-  // delay(1000);
-  // square.Move(0,100);
-  // delay(5000);
-  // square.Stop();
-  // delay(1000);
-  // square.Move(100,60);
-  // delay(5000);
-  // square.Stop();
-  // square.Move(100,-60);
-  // delay(5000);
-  // square.Stop();
+    
   }
 }
 
